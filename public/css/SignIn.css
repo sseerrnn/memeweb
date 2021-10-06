@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap);
+* {
+  font-family: "Work Sans", sans-serif;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+  margin-left: 320px;
+}
+
+#fp {
+  font-size: 18px;
+  margin-left: 33%;
+}
+
+button {
+  background-color: black;
+  border-color: rgb(95, 87, 87);
+  color: white;
+  border-radius: 3px;
+  border-color: transparent;
+  font-size: 25px;
+  margin-left: 21%;
+  width: 120px;
+  height: 40px;
+}
+
+button:hover {
+  background-color: #4e5050;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+div {
+  text-align: center;
+}
+
+body {
+  background-color: #e2e2e2;
+  padding: 13%;
+}
+
+#username {
+  padding: 10px;
+  width: 300px;
+}
+
+#password {
+  padding: 10px;
+  width: 240px;
+  margin-bottom: 20px;
+}

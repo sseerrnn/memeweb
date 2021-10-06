@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap);
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.container {
+  background-color: #e2e2e2;
+  min-height: 100vh;
+  padding: 50px;
+}
+.topic {
+  font-size: 70px;
+  margin-left: 100px;
+}
+.input {
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+.photo {
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+.upload {
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+.submit {
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  border-color: transparent;
+  text-decoration: none;
+  margin-left: 100px;
+}
+.submit:hover {
+  background-color: #4e5050;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.group {
+  margin-left: 100px;
+}
+textarea {
+  margin-top: 5px;
+  width: 500px;
+  height: 180px;
+  margin-bottom: 20px;
+}
+.description {
+  margin-top: 20px;
+}
+input[type="text"] {
+  width: 393px;
+  height: 20px;
+}

@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Rosario:wght@700&display=swap");
+* {
+  font-family: "Rosario", sans-serif;
+}
+h1 {
+  font-size: 288px;
+  width: 700px;
+  font-weight: 700;
+  text-align: center;
+  height: 250px;
+  margin-top: 70px;
+  
+}
+body {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: #e2e2e2;
+}
+button {
+  background-color: white;
+  border-radius: 5px;
+  width: 603px;
+  height: 86px;
+  padding: 3px;
+  font-size: 63px;
+  margin: 5px;
+  margin-bottom:10px ;
+}
+div {
+  width: 630px;
+  margin: auto;
+}
+p {
+  margin-left: 460px;
+  color: black;
+}

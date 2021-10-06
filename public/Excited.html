@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MEME</title>
+<link href="css/Catagory.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<!-- Container -->
+<div class="container"> 
+
+
+  <!-- Header -->
+  <header class="header">
+    <div><h4 class="logo">Excited</h4></div>
+  </header>
+
+
+  <!-- Task Bar -->
+  <a href="HomePage.html" style="color:white"><div class="headbuttonL"><strong>HOME</strong></div></a>
+  <a href="Upload.html" style="color:white"><div class="headbuttonR"><strong>UPLOAD</strong></div></a>
+
+  <!-- Stats Gallery -->
+  <div class="gallery" id="gallery">
+    <!-- <div class="thumbnail"> <a href="Meme.html"><img src="images/02.jpg" alt="" width="2000" class="photos"/></a>
+      <h3><p class="tab">Frequently used</p></h3>
+      <p class="text_column">This meme is usually used.This meme is usually used.This meme is usually used.This meme is usually used.This meme is usually used.</p>
+    </div>
+    <div class="thumbnail"> <a href="Meme.html"><img src="images/01.jpg" alt="" width="2000" class="photos"/></a>
+      <h4>sad meme</h4>
+      <p class="tag">A dog is hanging itself</p>
+      <p class="text_column">The description of this meme is not available because i'm lazy.The description of this meme is not available because i'm lazy.</p>
+    </div>
+    <div class="thumbnail"> <a href="Meme.html"><img src="images/03.jpeg" alt="" width="2000" class="photos"/></a>
+      <h4>sad meme</h4>
+      <p class="tag">Oh! it's hurt</p>
+      <p class="text_column">The description of this meme is not available because i'm lazy.The description of this meme is not available because i'm lazy.</p>
+    </div>
+    <div class="thumbnail"> <a href="Meme.html"><img src="images/04.jpg" alt="" width="2000" class="photos"/></a>
+      <h4>sad meme</h4>
+      <p class="tag">Don't cry my lil cat</p>
+      <p class="text_column">The description of this meme is not available because i'm lazy.The description of this meme is not available because i'm lazy.</p>
+    </div>
+  </div>
+  <div class="gallery">
+    <div class="thumbnail"> <a href="Meme.html"><img src="images/05.jpg" alt="" width="2000" class="photos"/></a>
+      <h4>sad meme</h4>
+      <p class="tag">Sad frog</p>
+      <p class="text_column">The description of this meme is not available because i'm lazy.The description of this meme is not available because i'm lazy.</p>
+    </div>
+    <div class="thumbnail"> <a href="Meme.html"><img src="images/06.webp" alt="" width="2000" class="photos"/></a>
+      <h4>sad meme</h4>
+      <p class="tag">I don't know</p>
+      <p class="text_column">The description of this meme is not available because i'm lazy.The description of this meme is not available because i'm lazy.</p>
+    </div>
+    <div class="thumbnail"> <a href="Meme.html"><img src="images/07.png" alt="" width="2000" class="photos"/></a>
+      <h4>sad meme</h4>
+      <p class="tag">How to describe this</p>
+      <p class="text_column">The description of this meme is not available because i'm lazy.The description of this meme is not available because i'm lazy.</p>
+    </div>
+    <div class="thumbnail"> <a href="Meme.html"><img src="images/08.jpg" alt="" width="2000" class="photos"/></a>
+      <h4>sad meme</h4>
+      <p class="tag">I always wanna die sometimes</p>
+      <p class="text_column">The description of this meme is not available because i'm lazy.The description of this meme is not available because i'm lazy.</p>
+    </div> -->
+  </div>
+
+
+  <!-- Footer -->
+
+  <div class="usernamebox" id="usernamebox" >
+    
+    <button  class='buttonD' id="USERNAME" >MENU</button>
+    <div class="popupbox" id="popupbox">
+        <a href="Profile.html"><button class="popupbutton">Profile</button></a>
+        <br>
+        <button class="popupbutton" onclick="logout()">Sign Out</button>
+    </div>
+    <h8><p class="tab"></p></h8>
+    <script src="js/HomePage.js"></script>
+</div>
+</div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyB4uGH75xBdRk-HaKDtkcUMn_JTj2eNqnk",
+    authDomain: "meme-fda74.firebaseapp.com",
+    projectId: "meme-fda74",
+    storageBucket: "meme-fda74.appspot.com",
+    messagingSenderId: "27336785324",
+    appId: "1:27336785324:web:553109a110843ef2770e09"
+  };
+  firebase.initializeApp(firebaseConfig);
+  console.log(firebase);
+</script>
+<script src="js/Excited.js"></script>
+</html>

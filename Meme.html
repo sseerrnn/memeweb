@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Meme</title>
+        <link rel="stylesheet" href="css/Meme.css" />
+    </head>
+
+    <body>
+        <h1 id="memename" ></h1>
+        <div><img id="img"  alt="Meme" width="30%"></div>
+        
+        <p id="description"></p>
+        <p id="upload">Uploaded by</p>
+        <p id='username'>EMAIL</p>
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB4uGH75xBdRk-HaKDtkcUMn_JTj2eNqnk",
+    authDomain: "meme-fda74.firebaseapp.com",
+    projectId: "meme-fda74",
+    storageBucket: "meme-fda74.appspot.com",
+    messagingSenderId: "27336785324",
+    appId: "1:27336785324:web:819b937f4410118c770e09"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+    
+    <script src="js/Meme.js"></script>
+
+</html>

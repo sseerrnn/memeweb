@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEME</title>
+    <link rel="stylesheet" href="css/SignUp.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="topic">SIGN UP</h1>
+      <div class="data">
+        <div class="group">
+          <label for="username">USERNAME</label>
+          <input id="username" type="text" placeholder="create your username" />
+          <span class="email"
+            ><label for="email">E-MAIL</label>
+            <input id="email" type="text" placeholder="type your e-mail"
+          /></span>
+        </div>
+        <div class="group">
+          <label for="password">PASSWORD</label>
+          <input
+            id="password"
+            type="password"
+            placeholder="create your password"
+          />
+        </div>
+        <div class="group">
+          <label for="passwordconfirmation">PASSWORD CONFIRMATION</label>
+          <input
+            id="passwordconfirmation"
+            type="password"
+            placeholder="confirm your password"
+          />
+        </div>
+        <button class="submit" onclick="register()">submit</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyB4uGH75xBdRk-HaKDtkcUMn_JTj2eNqnk",
+      authDomain: "meme-fda74.firebaseapp.com",
+      projectId: "meme-fda74",
+      storageBucket: "meme-fda74.appspot.com",
+      messagingSenderId: "27336785324",
+      appId: "1:27336785324:web:819b937f4410118c770e09",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="js/SignUp.js"></script>
+</html>

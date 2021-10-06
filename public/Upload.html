@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Upload MEME</title>
+  <link rel="stylesheet" href="css/Upload.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="topic">Upload MEME</h1>
+    <div class="input">
+      <input type="file" id="photo" />
+    </div>
+    <div class="photo">
+      <img class="image" id="image" />
+    </div>
+    <div class="upload">
+      <button onclick="uploadImage()">Upload Image</button>
+    </div>
+    <div class="group">
+      <label for="meme-name">MEME NAME</label>
+      <input class="memename" id="meme-name" type="text" placeholder="create your meme name">
+      <div class="description"><label for="description">DESCRIPTION</label></div>
+      <textarea id="description" placeholder="type you description"></textarea><br>
+    </div>
+    <button onclick="createData()" class="submit" id="submit">SUBMIT</button>
+  </div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyB4uGH75xBdRk-HaKDtkcUMn_JTj2eNqnk",
+    authDomain: "meme-fda74.firebaseapp.com",
+    projectId: "meme-fda74",
+    storageBucket: "meme-fda74.appspot.com",
+    messagingSenderId: "27336785324",
+    appId: "1:27336785324:web:553109a110843ef2770e09"
+  };
+  firebase.initializeApp(firebaseConfig);
+  console.log(firebase);
+</script>
+<script src="bundle.js"></script>
+<script src="Upload.js"></script>
+
+</html>
